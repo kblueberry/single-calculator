@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome">
+        <h1 class="welcome__title">Welcome to a calculator!</h1>
+        <button class="Welcome__open-button"></button>
+    </div>
+    <div class="calculator">
+        <button class="calculator__close-button"></button>
+        <div class="calculator__main">
+            <div class="calculator__calculations-view">
+                <h4 class="calculator__name">Simple Calc</h4>
+                <div class="calculations-view__row">
+                    <input type="number" class="calculations-view__input">
+                    <input type="number" class="calculations-view__input">
+                    <input type="number" class="calculations-view__input">
+                </div>
+                <div class="calculations-view__row">
+                    <input type="number" class="calculations-view__input">
+                    <input type="number" class="calculations-view__input">
+                    <input type="number" class="calculations-view__input">
+                </div>
+                <div class="calculations-view__row">
+                    <input type="number" class="calculations-view__input">
+                    <input type="number" class="calculations-view__input">
+                    <input type="number" class="calculations-view__input">
+                </div>
+                <div class="calculator__choose-operation">
+                    <h5 class="calculator__chose-operation__title">Choose a box</h5>
+                    <input type="radio" class="calculator__sum">Sum</input>
+                    <input type="radio" class="calculator__multiply">Multiply</input>
+                </div>
+            </div>
+            <div class="calculator__results">
+                <h5 class="calculator__results__name">Results</h5>
+                <div class="calculator__results__field">Number</div>
+                <div class="calculator__results__field">Number
+                    <div class="calculator__results__field">Number</div>
+                </div>
+            </div>
+
+
+            <!-- 
+                <h4>Simple Calc</h4>
+                    <div class="calculator__measure_field">Field for numbers and operators</div>
+                    <h5>Results</h4>
+                        <div class="calculator__results_field">Here are the results</div> -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
