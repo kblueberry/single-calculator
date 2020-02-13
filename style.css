@@ -13,14 +13,18 @@
   padding: 50px 10px;
   width: 50%;
   margin: 0 auto;
-  background-color: ivory;
+  background-color: rgb(255, 255, 255);
   border-radius: 55px;
-  border: 2px solid firebrick;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.21);
   display: block;
   flex-direction: column;
 }
 
 .calculator__close-button {
+  background-color: rgb(240, 87, 87);
+  color: white;
+  border: none;
   width: 160px;
   display: block;
   padding: 10px 30px;
