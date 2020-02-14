@@ -119,3 +119,7 @@ input[type=number] {
   width: 35px;
   height: 35px;
 }
+
+.row-selected {
+  background-color: seagreen;
+}

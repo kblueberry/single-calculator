@@ -35,3 +35,15 @@ function closeCalculator() {
 function onRadioButtonClick() {
   onInputChange(row);
 }
+
+function onBoxClicked(row) {
+  let boxChecked = $(`#select__checkbox-${row}`);
+  boxChecked.click(function() {
+    let rows = Array.from($('calculations-view__row'));
+    for (let i = 1; i <= rows.length; i++) {
+      if (boxChecked) {
+        rows[i].addClass('row-selected');
+      }
+    }
+  });
+}
