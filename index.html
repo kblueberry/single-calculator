@@ -11,11 +11,11 @@
 
 <body>
     <div class="calculator calculator--closed">
-        <h1 class="calculator__title">Welcome to a calculator!</h1>
-        <button class="calculator__open-button">Open calculator</button>
+        <h1 class="calculator__title">Welcome to calculator!</h1>
+        <button class="calculator__open-button" onclick="openCalculator()">Open calculator</button>
     </div>
-    <div class="calculator calculator--opened">
-        <button class="calculator__close-button">Close calculator</button>
+    <div class="calculator calculator--opened calculator--hidden">
+        <button class="calculator__close-button" onclick="closeCalculator()">Close calculator</button>
         <div class="calculator__main">
             <div class="calculator__calculations-view">
                 <div class="calculator__names">
@@ -49,17 +49,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="calculator__results">
-                <div class="calculator__results__field">
-                    <input type="number" class="calculations-result__input">
-                </div>
-                <div class="calculator__results__field">
-                    <input type="number" class="calculations-result__input">
-                </div>
-                <div class="calculator__results__field">
-                    <input type="number" class="calculations-result__input">
-                </div>
-            </div> -->
         </div>
         <div class="calculator__choose-operation">
             <h4 class="calculator__chose-operation__title">Choose a box</h5>
