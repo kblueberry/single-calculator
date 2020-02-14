@@ -36,7 +36,6 @@
   position: relative;
   margin: 9% auto;
   display: block;
-  flex-direction: column;
 }
 
 .calculator__close-button {
@@ -55,7 +54,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .calculator__names {
@@ -112,4 +111,11 @@ input[type=number] {
 
 .calculator__choose-operation {
   margin-left: 4em;
+}
+
+#select__checkbox-1,
+#select__checkbox-2,
+#select__checkbox-3 {
+  width: 35px;
+  height: 35px;
 }
