@@ -37,13 +37,9 @@ function onRadioButtonClick() {
 }
 
 function onBoxClicked(row) {
-  let boxChecked = $(`#select__checkbox-${row}`);
-  boxChecked.click(function() {
-    let rows = Array.from($('calculations-view__row'));
-    for (let i = 1; i <= rows.length; i++) {
-      if (boxChecked) {
-        rows[i].addClass('row-selected');
-      }
-    }
-  });
+  if ($(`#select__checkbox-${row}`).is(':checked')) {
+    $(`#row-${row}`).addClass('row-selected');
+  } else {
+    $(`#row-${row}`).removeClass('row-selected');
+  }
 }
