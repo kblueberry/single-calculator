@@ -6,12 +6,23 @@ function openCalculator() {
 }
 
 function onInputChange(row) {
-  let result =
-    Number($(`#number-${row}-1`).val()) +
-    Number($(`#number-${row}-2`).val()) +
-    Number($(`#number-${row}-3`).val());
+  let result;
+  let radioValue = $("input[name='operation']:checked").val();
+  if (radioValue === 'sum') {
+    result =
+      Number($(`#number-${row}-1`).val()) +
+      Number($(`#number-${row}-2`).val()) +
+      Number($(`#number-${row}-3`).val());
 
-  $(`#number-row-${row}-res`).val(result);
+    $(`#number-row-${row}-res`).val(result);
+  } else {
+    result =
+      Number($(`#number-${row}-1`).val()) *
+      Number($(`#number-${row}-2`).val()) *
+      Number($(`#number-${row}-3`).val());
+
+    $(`#number-row-${row}-res`).val(result);
+  }
 }
 
 function closeCalculator() {
@@ -19,4 +30,8 @@ function closeCalculator() {
     $('.calculator--opened').addClass('calculator--hidden');
     $('.calculator--closed').removeClass('calculator--hidden');
   });
+}
+
+function onRadioButtonClick() {
+  onInputChange(row);
 }
